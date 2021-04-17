@@ -9,7 +9,7 @@ This repository is mainly used to keep an up to date configuration file dedicate
 
 # Resources
  * I am not the firt who done it, there a pretty well documented project here :  https://www.instructables.com/Monoprice-Select-Mini-Smoothieboard-Conversion/
- * 
+ * complete guide for smoothieboard setup https://smoothieware.org/3d-printer-guide 
 # TODO list :
 - [x] tune current of the stepper https://mpselectmini.com/parts/stepper_motors
 - [ ] fine tune current of the stepper https://mpselectmini.com/parts/stepper_motors

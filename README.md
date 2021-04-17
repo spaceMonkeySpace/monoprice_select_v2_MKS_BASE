@@ -22,12 +22,13 @@ This repository is mainly used to keep an up to date configuration file dedicate
 - [x] fine tune step per mm
 - [x] fix runaway temp security
 - [x] fix the homing (the stepper direction are wrong the end stop are inerveted by default)
-- [ ] fix the fan (the fan of the main board dont work neither the hotend fan)
+- [x] fix the fan (the fan of the main board dont work neither the hotend fan)
 - [ ] find the right step per mm for accuracy https://mpselectmini.com/extruder_calibration
+- [ ] copy the gloabl setting of the machine https://mpselectmini.com/users_manual_v2
+
 - [ ] drill new holes in panel
 - [ ] buy JST 3 connector and replace
 - [ ] calmibrate extruder https://mpselectmini.com/extruder_calibration
 - [ ] fix heat bed wire (tend to break) https://mpselectmini.com/mods#heat_bed_wiring use silicon cable instead of other
-- [ ] copy the gloabl setting of the machine https://mpselectmini.com/users_manual_v2
 - [ ] secure the washer under the carrier on the z rod https://www.reddit.com/r/MPSelectMiniOwners/comments/b0lq1l/zaxis_nut_broke_loose_maybe/
 - [ ] replace the leadscrew https://hackaday.io/project/14823-monoprice-select-mini-maximum-3d-printer-mods/log/55525-upgrade-the-z-axis-with-a-nema17-stepper-and-tr8x8-leadscrew (must put a reductor because this is not as accurate as the original one)

@@ -1,5 +1,11 @@
 # Upgrade  monoprice select v2 3D printer with a MKS SBASE board
 
+## the monoprice select v2
+The monoprice select v2 is an affordable 3 printer, but it comes with some flows. At the begginning it was printing right thrue SD card and USB and gradualy while the software (cura or repetier) goes on update, this closed source printer stopped to print. In adition some part went broken.
+I purchase it knowing that issues will happen, and I planned to fix it with an open source 32bit board, and new quality part when one fail. 
+And here we are
+
+# new electronic breadboard
 The MKS SBASE v1 is an affordable 32 bit board with good capabilities. It run the smoothieware firmare (this is open source and can be found here https://github.com/Smoothieware/Smoothieware). This is not marlin or repetier
 Before unboxing the board this is very important to read the WHOLE documentation here https://smoothieware.org/3d-printer-guide
 Because there is many way to fry the board, if like me you ruch the wiring. For exemple you must never unplug the stepper while the board is on.
@@ -22,3 +28,5 @@ This repository is mainly used to keep an up to date configuration file dedicate
 - [ ] calmibrate extruder https://mpselectmini.com/extruder_calibration
 - [ ] fix heat bed wire (tend to break) https://mpselectmini.com/mods#heat_bed_wiring use silicon cable instead of other
 - [ ] copy the gloabl setting of the machine https://mpselectmini.com/users_manual_v2
+- [ ] secure the washer under the carrier on the z rod https://www.reddit.com/r/MPSelectMiniOwners/comments/b0lq1l/zaxis_nut_broke_loose_maybe/
+- [ ] replace the leadscrew https://hackaday.io/project/14823-monoprice-select-mini-maximum-3d-printer-mods/log/55525-upgrade-the-z-axis-with-a-nema17-stepper-and-tr8x8-leadscrew (must put a reductor because this is not as accurate as the original one)

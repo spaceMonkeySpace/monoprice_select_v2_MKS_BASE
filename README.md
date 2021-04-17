@@ -18,9 +18,9 @@ This repository is mainly used to keep an up to date configuration file dedicate
  * complete guide for smoothieboard setup https://smoothieware.org/3d-printer-guide 
 # TODO list :
 - [x] tune current of the stepper https://mpselectmini.com/parts/stepper_motors
-- [ ] fine tune current of the stepper https://mpselectmini.com/parts/stepper_motors
-- [ ] fine tune step per mm
-- [ ] fix runaway temp security
+- [x] fine tune current of the stepper https://mpselectmini.com/parts/stepper_motors
+- [x] fine tune step per mm
+- [x] fix runaway temp security
 - [x] fix the homing (the stepper direction are wrong the end stop are inerveted by default)
 - [ ] fix the fan (the fan of the main board dont work neither the hotend fan)
 - [ ] find the right step per mm for accuracy https://mpselectmini.com/extruder_calibration

@@ -33,3 +33,7 @@ This repository is mainly used to keep an up to date configuration file dedicate
 - [ ] fix heat bed wire (tend to break) https://mpselectmini.com/mods#heat_bed_wiring use silicon cable instead of other
 - [ ] secure the washer under the carrier on the z rod https://www.reddit.com/r/MPSelectMiniOwners/comments/b0lq1l/zaxis_nut_broke_loose_maybe/
 - [ ] replace the leadscrew https://hackaday.io/project/14823-monoprice-select-mini-maximum-3d-printer-mods/log/55525-upgrade-the-z-axis-with-a-nema17-stepper-and-tr8x8-leadscrew (must put a reductor because this is not as accurate as the original one)
+
+# buy list
+- [ ] JST3 x 3
+- [ ] thermo

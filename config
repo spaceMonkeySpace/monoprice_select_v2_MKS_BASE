@@ -199,20 +199,20 @@ alpha_min_endstop                            1.24^!           # Pin to read min 
 #alpha_max_endstop                           1.25^            # Pin to read max endstop, uncomment this and comment the above if using max endstops
 alpha_homing_direction                       home_to_min      # Or set to home_to_max and set alpha_max and uncomment the alpha_max_endstop
 alpha_min                                    0                # This gets loaded as the current position after homing when home_to_min is set
-alpha_max                                    110              # This gets loaded as the current position after homing when home_to_max is set
+alpha_max                                    120              # This gets loaded as the current position after homing when home_to_max is set
 beta_min_endstop                             1.26^!           # Pin to read min endstop, add a ! to invert if endstop is NO connected to ground
 #beta_max_endstop                            1.27^            # Pin to read max endstop, uncomment this and comment the above if using max endstops
 beta_homing_direction                        home_to_min      # Or set to home_to_max and set alpha_max and uncomment the alpha_max_endstop
 beta_min                                     0                # This gets loaded as the current position after homing when home_to_min is set
-beta_max                                     110              # This gets loaded as the current position after homing when home_to_max is set
+beta_max                                     120              # This gets loaded as the current position after homing when home_to_max is set
 gamma_min_endstop                            1.28^!           # Pin to read min endstop, add a ! to invert if endstop is NO connected to ground
 #gamma_max_endstop                           1.29^            # Pin to read max endstop, uncomment this and comment the above if using max endstops
 gamma_homing_direction                       home_to_min      # Or set to home_to_max and set alpha_max and uncomment the alpha_max_endstop
 gamma_min                                    0                # This gets loaded as the current position after homing when home_to_min is set
 gamma_max                                    110              # This gets loaded as the current position after homing when home_to_max is set
 
-alpha_max_travel                             110              # Max travel in mm for alpha/X axis when homing
-beta_max_travel                              110              # Max travel in mm for beta/Y axis when homing
+alpha_max_travel                             120              # Max travel in mm for alpha/X axis when homing
+beta_max_travel                              120              # Max travel in mm for beta/Y axis when homing
 gamma_max_travel                             110              # Max travel in mm for gamma/Z axis when homing
 
 # Optional enable limit switches, actions will stop if any enabled limit switch is triggered

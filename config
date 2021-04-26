@@ -18,14 +18,14 @@ gamma_steps_per_mm                           1097             # Steps per mm for
 
 # Planner module configuration : Look-ahead and acceleration configuration
 # See http://smoothieware.org/motion-control
-acceleration                                 3000             # Acceleration in mm/second/second.
+acceleration                                 2000             # Acceleration in mm/second/second.
 #z_acceleration                              500              # Acceleration for Z only moves in mm/s^2, 0 uses acceleration which is the default. DO NOT SET ON A DELTA
 junction_deviation                           0.05             # See http://smoothieware.org/motion-control#junction-deviation
 #z_junction_deviation                        0.0              # For Z only moves, -1 uses junction_deviation, zero disables junction_deviation on z moves DO NOT SET ON A DELTA
 
 # Cartesian axis speed limits
-x_axis_max_speed                             30000            # Maximum speed in mm/min
-y_axis_max_speed                             30000            # Maximum speed in mm/min
+x_axis_max_speed                             20000            # Maximum speed in mm/min
+y_axis_max_speed                             20000            # Maximum speed in mm/min
 z_axis_max_speed                             300              # Maximum speed in mm/min
 
 # Stepper module configuration
@@ -36,13 +36,13 @@ z_axis_max_speed                             300              # Maximum speed in
 alpha_step_pin                               2.0              # Pin for alpha stepper step signal
 alpha_dir_pin                                0.5!             # Pin for alpha stepper direction, add '!' to reverse direction
 alpha_en_pin                                 0.4              # Pin for alpha enable pin
-alpha_current                                0.8              # X stepper motor current 
+alpha_current                                0.9              # X stepper motor current 
 alpha_max_rate                               30000.0          # Maximum rate in mm/min
 
 beta_step_pin                                2.1              # Pin for beta stepper step signal
 beta_dir_pin                                 0.11             # Pin for beta stepper direction, add '!' to reverse direction
 beta_en_pin                                  0.10             # Pin for beta enable
-beta_current                                 0.8              # Y stepper motor current
+beta_current                                 1.0              # Y stepper motor current
 beta_max_rate                                30000.0          # Maxmimum rate in mm/min
 
 gamma_step_pin                               2.2              # Pin for gamma stepper step signal
@@ -54,7 +54,7 @@ gamma_max_rate                               300.0            # Maximum rate in 
 ## Extruder module configuration
 # See http://smoothieware.org/extruder
 extruder.hotend.enable                          true          # Whether to activate the extruder module at all. All configuration is ignored if false
-extruder.hotend.steps_per_mm                     97           # Steps per mm for extruder stepper
+extruder.hotend.steps_per_mm                    101.98        # Steps per mm for extruder stepper
 extruder.hotend.default_feed_rate               600           # Default rate ( mm/minute ) for moves where only the extruder moves
 extruder.hotend.acceleration                    500           # Acceleration for the stepper motor mm/sec²
 extruder.hotend.max_speed                        50           # Maximum speed in mm/s
@@ -69,12 +69,12 @@ extruder.hotend.en_pin                          0.21          # Pin for extruder
 #extruder.hotend.z_offset                        0            # Z offset from origin in mm
 
 # Firmware retract settings when using G10/G11, these are the defaults if not defined, must be defined for each extruder if not using the defaults
-#extruder.hotend.retract_length                  3            # Retract length in mm
-#extruder.hotend.retract_feedrate                45           # Retract feedrate in mm/sec
-#extruder.hotend.retract_recover_length          0            # Additional length for recover
-#extruder.hotend.retract_recover_feedrate        8            # Recover feedrate in mm/sec (should be less than retract feedrate)
-#extruder.hotend.retract_zlift_length            0            # Z-lift on retract in mm, 0 disables
-#extruder.hotend.retract_zlift_feedrate          6000         # Z-lift feedrate in mm/min (Note mm/min NOT mm/sec)
+extruder.hotend.retract_length                  5            # Retract length in mm
+extruder.hotend.retract_feedrate               45            # Retract feedrate in mm/sec
+extruder.hotend.retract_recover_length          0            # Additional length for recover
+extruder.hotend.retract_recover_feedrate        8            # Recover feedrate in mm/sec (should be less than retract feedrate)
+extruder.hotend.retract_zlift_length            1            # Z-lift on retract in mm, 0 disables
+extruder.hotend.retract_zlift_feedrate       6000            # Z-lift feedrate in mm/min (Note mm/min NOT mm/sec)
 
 delta_current                                    1.5          # First extruder stepper motor current
 
@@ -230,7 +230,7 @@ gamma_slow_homing_rate_mm_s                  2                # Gamma/Z slow hom
 
 alpha_homing_retract_mm                      5                # Distance to retract from the endstop after it is hit for alpha/X
 beta_homing_retract_mm                       5                # Distance to retract from the endstop after it is hit for beta/Y
-gamma_homing_retract_mm                      1                # Distance to retract from the endstop after it is hit for gamma/Z
+gamma_homing_retract_mm                      5                # Distance to retract from the endstop after it is hit for gamma/Z
 
 # Optional order in which axis will home, default is they all home at the same time,
 # If this is set it will force each axis to home one at a time in the specified order
